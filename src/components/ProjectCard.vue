@@ -49,9 +49,10 @@ import type { Project } from '@/data/projects'
 
 const props = defineProps<{ project: Project }>()
 
-const typeLabel = computed(() => ({
+const typeMap: Record<string, string> = {
   ai: 'AI / Orchestration',
   saas: 'SaaS Product',
   platform: 'Platform',
-}[props.project.type]))
+}
+const typeLabel = computed(() => typeMap[props.project.type] ?? props.project.type)
 </script>
