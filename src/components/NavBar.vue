@@ -10,7 +10,7 @@
           {{ link.label }}
         </a>
       </div>
-      <a href="mailto:hello@iamsaeed.com" class="btn-primary text-sm">
+      <a href="#contact" class="btn-primary text-sm">
         Hire Me
       </a>
     </div>

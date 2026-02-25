@@ -9,7 +9,7 @@
           class="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">
           <Github :size="18" />
         </a>
-        <a href="https://linkedin.com/in/iamsaeed" target="_blank"
+        <a href="https://www.linkedin.com/in/ahmads-k/" target="_blank"
           class="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">
           <Linkedin :size="18" />
         </a>
