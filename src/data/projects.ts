@@ -13,87 +13,70 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'cortexai',
-    name: 'CortexAI',
-    tagline: 'Autonomous Multi-Agent Orchestrator',
+    id: 'edtech',
+    name: 'EdTech Learning Platform',
+    tagline: 'Client platform — building and maintaining since March 2020',
     description:
-      'A production-grade AI orchestration platform that accepts plain English tasks, decomposes them, delegates to specialist agents, and learns over time. Dual LLM strategy: Claude Code SDK for reasoning, GPT-4o-mini for fast structured tasks.',
-    stack: ['Python', 'FastAPI', 'Vue 3', 'PostgreSQL', 'Claude SDK', 'GPT-4o-mini', 'WebSockets', 'Tailwind'],
-    highlights: [
-      'Multi-agent task decomposition & routing',
-      'WebSocket streaming chat with persistent sessions',
-      'AI Studio app builder (generates full apps)',
-      'Warroom: deploy/backup/health-check 19 projects',
-      'Dual LLM tier: strong reasoning + cheap structured',
-      'Row-Level Security multi-tenant SaaS',
-    ],
-    timeline: 'Ongoing — built core in weeks',
-    type: 'ai',
-  },
-  {
-    id: 'goprofiled',
-    name: 'GoProfiled',
-    tagline: 'Business Intelligence Platform',
-    description:
-      'A full-stack business directory and intelligence platform with AI-powered content pipelines, SEO-optimised listings, automated blog generation, and a complete CMS. Built for scale with a content ingestion pipeline processing thousands of listings.',
-    stack: ['Laravel', 'Vue 3', 'PostgreSQL', 'AI Pipeline', 'SEO', 'Tailwind'],
-    highlights: [
-      'Full listings ingestion & enrichment pipeline',
-      'AI-generated blog content at scale',
-      'Location-aware microsites',
-      'Admin CMS with bulk operations',
-      'Production-deployed on DigitalOcean',
-    ],
-    timeline: 'Shipped core product in days',
-    liveUrl: 'https://goprofiled.com',
-    type: 'saas',
-  },
-  {
-    id: 'testsherpa',
-    name: 'TestSherpa',
-    tagline: 'AI-Powered Testing Platform',
-    description:
-      'An intelligent testing platform that leverages AI to generate, run, and analyse test suites. Helps development teams ship with confidence by automating the testing lifecycle from spec generation to result analysis.',
-    stack: ['Laravel', 'Vue 3', 'MySQL', 'AI Integration', 'Tailwind'],
-    highlights: [
-      'AI test generation from code context',
-      'Automated test suite management',
-      'Result analysis & reporting',
-      'CI/CD pipeline integration',
-    ],
-    timeline: 'Production-deployed',
-    liveUrl: 'https://testsherpa.ai',
-    type: 'platform',
-  },
-  {
-    id: 'codewithus',
-    name: 'CodeWithUs',
-    tagline: 'Interactive Coding Education Platform',
-    description:
-      'A full-featured coding education platform with interactive lessons, an AI-powered lesson builder, custom online code editor, and student/instructor portals. Supports Scratch, Python, JavaScript, and more across multiple age groups.',
+      'A multi-age coding education platform (100K+ users) with an AI-powered lesson builder, a custom in-browser IDE, and block-based visual programming for younger learners. AI capability was added incrementally onto a mature Laravel/Vue codebase — not built AI-first.',
     stack: ['Laravel', 'Vue 3', 'MySQL', 'Claude SDK', 'WebSockets', 'Tailwind'],
     highlights: [
-      'AI lesson builder with 12 block types',
-      'Custom online code editor (IDE)',
-      'Multi-age curriculum (8-12, 12-16, 16+)',
-      'Scratch & code exercise support',
-      'Student + instructor portals',
+      '100K+ users across 3 age-grouped curricula',
+      'AI lesson builder — 12 interactive block types',
+      'Custom online code editor (IDE) + block-based visual programming',
+      'Student, instructor, and parent dashboards',
+      'Formal QA discipline — test plans, evidence capture, bug triage',
     ],
-    timeline: 'Production-deployed',
+    timeline: 'In production since March 2020',
     type: 'platform',
+  },
+  {
+    id: 'aadhaar',
+    name: 'Aadhaar Identity Verification Platform',
+    tagline: 'Client platform — GovTech / RegTech, built end-to-end',
+    description:
+      'Sole engineer delivering the full stack (backend, mobile app, frontend) for a client UIDAI-registered as an Offline Verification Seeking Entity. Compliant with the Aadhaar Act 2016 and DPDPA 2023.',
+    stack: ['Laravel', 'Vue 3', 'Flutter', 'PostgreSQL'],
+    highlights: [
+      '1M+ verifications processed last quarter, scaling toward 10M/quarter',
+      'Serving 200+ verification centers',
+      'Encrypted selective-disclosure verification, immutable audit/consent trail',
+      'Multi-panel platform (org admin, verification center, supervisor) + mobile verifier app',
+      'Built solo — backend, mobile app, and frontend',
+    ],
+    timeline: 'Current — production',
+    type: 'platform',
+  },
+  {
+    id: 'cortexai',
+    name: 'cortexai',
+    tagline: "Askasia's Agent Orchestration Platform — own system",
+    description:
+      "Designed and operate the AI agent-orchestration platform that runs Askasia's own business end-to-end — billing, CRM pipeline, prospecting, and content publishing all handled by a coordinated fleet of specialist agents.",
+    stack: ['Python', 'FastAPI', 'Vue 3', 'PostgreSQL', 'Claude SDK', 'MCP', 'WebSockets'],
+    highlights: [
+      '29 specialist agents, each scoped to least-privilege tool access',
+      '77 automation skills, 24 MCP tool integrations',
+      'Task board + artifact store + run log in central Postgres — atomic task_claim, no double-work',
+      'Provider-agnostic LLM layer — swap providers via env var, zero code changes',
+      'Runs real monthly billing, invoicing, CRM, prospecting, and publishing in production',
+    ],
+    timeline: 'Ongoing — current',
+    liveUrl: 'https://askasia.in',
+    type: 'ai',
   },
 ]
 
 export const stats = [
-  { value: '10x', label: 'Faster than traditional dev teams' },
-  { value: '5+', label: 'Production SaaS apps shipped' },
-  { value: '19', label: 'Projects managed via AI orchestration' },
-  { value: '2wks', label: 'Average MVP delivery time' },
+  { value: '10+', label: 'Years shipping production software' },
+  { value: '100K+', label: 'Users on the EdTech platform' },
+  { value: '1M+', label: 'Aadhaar verifications last quarter' },
+  { value: '29', label: 'Agents orchestrated by cortexai' },
 ]
 
 export const skills = [
-  { category: 'Backend', items: ['Laravel', 'FastAPI', 'Python', 'PostgreSQL', 'MySQL', 'Redis'] },
+  { category: 'Backend', items: ['Laravel', 'FastAPI', 'Python', 'Node.js', 'REST API design', 'PostgreSQL', 'MySQL', 'Redis'] },
   { category: 'Frontend', items: ['Vue 3', 'TypeScript', 'Tailwind CSS', 'Vite', 'Pinia'] },
-  { category: 'AI / LLM', items: ['Claude SDK', 'GPT-4o', 'Multi-agent systems', 'Prompt engineering', 'RAG pipelines'] },
-  { category: 'Infrastructure', items: ['DigitalOcean', 'Docker', 'PM2', 'Nginx', 'SSH automation', 'CI/CD'] },
+  { category: 'AI / Agentic', items: ['Claude SDK', 'ChatGPT', 'MCP / multi-agent orchestration', 'Prompt engineering', 'RAG pipelines'] },
+  { category: 'Testing', items: ['PHPUnit', 'Pytest', 'Vitest', 'Cypress', 'Playwright'] },
+  { category: 'Infrastructure', items: ['DigitalOcean', 'Docker', 'Nginx', 'On-premises infra', 'Git', 'CI/CD'] },
 ]

@@ -5,10 +5,11 @@
 
         <!-- Left: info -->
         <div>
-          <h2 class="section-heading">Let's Work Together</h2>
+          <h2 class="section-heading">Let's Talk</h2>
           <p class="text-[var(--color-text-muted)] leading-relaxed mb-8">
-            Looking for someone who can ship your MVP in 2 weeks, integrate AI into your product,
-            or act as a fractional CTO? Drop me a message and I'll get back to you within 24 hours.
+            Open to full-time, contract, and fractional CTO opportunities — remote preferred.
+            If you're hiring for a senior full-stack or AI/agentic-systems role, I'd like to hear
+            about it. Drop me a message and I'll get back to you within 24 hours.
           </p>
 
           <div class="space-y-4">
@@ -68,11 +69,11 @@
               <select v-model="form.subject"
                 class="w-full bg-[var(--color-surface-3)] border border-[var(--color-border)] rounded-lg px-4 py-2.5
                        text-[var(--color-text)] text-sm focus:outline-none focus:border-[var(--color-primary)] transition-colors">
-                <option value="">Select a project type...</option>
-                <option>MVP / Product build</option>
-                <option>AI integration into existing product</option>
+                <option value="">Select an option...</option>
+                <option>Full-time opportunity</option>
+                <option>Contract engagement</option>
                 <option>Fractional CTO</option>
-                <option>Full-stack development</option>
+                <option>General inquiry</option>
                 <option>Other</option>
               </select>
             </div>

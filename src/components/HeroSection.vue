@@ -4,18 +4,18 @@
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 tag mb-6">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          Available for new projects
+          Open to new opportunities
         </div>
 
         <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-          I architect &amp; ship<br />
-          <span class="gradient-text">production software</span><br />
-          in days, not months.
+          Senior Full-Stack Engineer<br />
+          <span class="gradient-text">AI Agentic Systems Architect</span>
         </h1>
 
         <p class="text-[var(--color-text-muted)] text-xl leading-relaxed mb-10 max-w-2xl">
-          AI-enabled software developer &amp; orchestrator. What takes a team of 5 engineers 3 months,
-          I deliver in 2 weeks — using AI-augmented workflows, smart tooling, and deep full-stack expertise.
+          10+ years shipping production SaaS. Currently at Askasia, owning end-to-end delivery on
+          two concurrent client platforms plus the company's own AI agent-orchestration system —
+          full-stack depth in Laravel, Vue 3, Python/FastAPI, and production multi-agent AI.
         </p>
 
         <div class="flex flex-wrap gap-4 mb-16">
